@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIX-WAVE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- NAVBAR -->
+  <header class="w-full bg-white shadow-sm sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-[#ff5757]">TIX-WAVE</h1>
+      <nav class="space-x-6 text-lg font-medium">
+        <a href="#home" class="hover:text-[#ff5757]">Home</a>
+        <a href="#concerts" class="hover:text-[#ff5757]">Concerts</a>
+        <a href="#about" class="hover:text-[#ff5757]">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="w-full bg-gradient-to-r from-[#ff5757] to-[#8c52ff] text-white py-24">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-extrabold mb-4">Find Your Next Concert Experience</h2>
+      <p class="text-xl mb-6 opacity-90">Pesan tiket konser favoritmu dengan cepat, aman, dan tanpa ribet melalui TIX-WAVE.</p>
+      <a href="event.html" class="px-6 py-3 bg-[#8c52ff] rounded-lg text-lg font-semibold hover:opacity-90">Jelajahi Konser</a>
+    </div>
+  </section>
+
+  <!-- DESCRIPTION -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-16 text-center">
+    <h3 class="text-3xl font-bold text-[#8c52ff] mb-4">Apa itu TIX-WAVE?</h3>
+    <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+      TIX-WAVE adalah platform pembelian tiket konser berbasis web yang dirancang untuk memberikan pengalaman pemesanan yang cepat, aman, dan nyaman. Dengan tampilan modern dan fitur e-ticket berbasis QR Code, kamu bisa masuk venue tanpa antre panjang.
+    </p>
+  </section>
+
+  <!-- CONCERT LIST -->
+  <section id="concerts" class="max-w-6xl mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold text-[#ff5757] text-center mb-10">Konser yang Tersedia</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- CARD 1 -->
+      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1518972559570-7cc1309f3229?auto=format&fit=crop&w=800&q=60" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold text-[#8c52ff] mb-2">Indie Fest 2025</h4>
+          <p class="text-gray-600 mb-4">Konser musik indie terbesar tahun ini, hadir dengan line-up musisi lokal dan internasional.</p>
+          <button class="w-full py-2 bg-[#ff5757] text-white rounded-lg hover:opacity-90">Beli Tiket</button>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=800&q=60" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold text-[#8c52ff] mb-2">Rock Legends Tour</h4>
+          <p class="text-gray-600 mb-4">Saksikan aksi panggung memukau dari band rock legendaris dengan produksi panggung spektakuler.</p>
+          <button class="w-full py-2 bg-[#ff5757] text-white rounded-lg hover:opacity-90">Beli Tiket</button>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=60" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold text-[#8c52ff] mb-2">K-Pop Star Night</h4>
+          <p class="text-gray-600 mb-4">Konser K-Pop penuh energi dengan idol-idol ternama yang siap mengguncang panggung.</p>
+          <button class="w-full py-2 bg-[#ff5757] text-white rounded-lg hover:opacity-90">Beli Tiket</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 bg-white shadow-inner text-center text-gray-600 text-sm">
+    © 2025 TIX-WAVE. All rights reserved.
+  </footer>
+</body>
+</html>

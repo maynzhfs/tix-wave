@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>TIX-WAVE | Konfirmasi Tiket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-white shadow-sm">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-[#ff5757]">TIX-WAVE</h1>
+  </div>
+</header>
+
+<section class="max-w-xl mx-auto px-6 py-16">
+
+  <h2 class="text-3xl font-bold text-[#8c52ff] mb-6 text-center">
+    Konfirmasi Pembelian Tiket
+  </h2>
+
+  <div class="bg-white rounded-xl shadow p-6 space-y-6">
+
+    <!-- EVENT INFO -->
+    <div class="border-b pb-4">
+      <h3 class="text-lg font-semibold">Indie Fest 2025</h3>
+      <p class="text-sm text-gray-600">Jenis Tiket: <strong>Premium</strong></p>
+      <p class="text-sm text-gray-600">
+        Harga Tiket: Rp <span id="ticketPrice">300000</span>
+      </p>
+    </div>
+
+    <!-- NAME -->
+    <div>
+      <label class="block text-sm font-medium mb-2">
+        Atas Nama Pemesan
+      </label>
+      <input
+        type="text"
+        class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#8c52ff]"
+        placeholder="Masukkan nama lengkap"
+      />
+    </div>
+
+    <!-- QTY -->
+    <div>
+      <label class="block text-sm font-medium mb-2">
+        Jumlah Tiket
+      </label>
+      <select
+        id="ticketQty"
+        onchange="updateTotal()"
+        class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#8c52ff]"
+      >
+        <option value="1">1 Tiket</option>
+        <option value="2">2 Tiket</option>
+        <option value="3">3 Tiket</option>
+        <option value="4">4 Tiket</option>
+        <option value="5">5 Tiket</option>
+      </select>
+    </div>
+
+    <!-- PRICE SUMMARY -->
+    <div class="border-t pt-4 space-y-2 text-sm">
+      <div class="flex justify-between">
+        <span>Subtotal</span>
+        <span>Rp <span id="subtotal">300000</span></span>
+      </div>
+      <div class="flex justify-between">
+        <span>Pajak</span>
+        <span>Rp <span id="tax">15000</span></span>
+      </div>
+      <div class="flex justify-between font-semibold text-base">
+        <span>Total Pembayaran</span>
+        <span>Rp <span id="total">315000</span></span>
+      </div>
+    </div>
+
+    <a
+      href="checkout.html"
+      class="block text-center bg-[#ff5757] text-white py-3 rounded-lg font-semibold hover:opacity-90"
+    >
+      Lanjut ke Checkout
+    </a>
+
+  </div>
+
+</section>
+
+<footer class="bg-white border-t py-6 text-center text-sm text-gray-500">
+  © 2025 TIX-WAVE
+</footer>
+
+<!-- MINIMAL JS -->
+<script>
+  const price = 300000;
+  const tax = 15000;
+
+  function updateTotal() {
+    const qty = document.getElementById("ticketQty").value;
+    const subtotal = price * qty;
+    const total = subtotal + tax;
+
+    document.getElementById("subtotal").innerText = subtotal;
+    document.getElementById("total").innerText = total;
+  }
+</script>
+
+</body>
+</html>
