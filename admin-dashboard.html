@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>TIX-WAVE | Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<div class="flex min-h-screen">
+
+  <!-- SIDEBAR -->
+  <aside class="w-64 bg-white shadow-lg fixed h-full">
+    <div class="p-6 border-b">
+      <h1 class="text-2xl font-bold text-[#ff5757]">TIX-WAVE</h1>
+      <p class="text-sm text-gray-500">Admin Panel</p>
+    </div>
+
+    <nav class="p-4 space-y-2 text-sm">
+      <a href="#dashboard" class="block px-4 py-2 rounded-lg bg-[#8c52ff] text-white">
+        Dashboard
+      </a>
+      <a href="#events" class="block px-4 py-2 rounded-lg hover:bg-gray-100">
+        Data Event
+      </a>
+      <a href="#transactions" class="block px-4 py-2 rounded-lg hover:bg-gray-100">
+        Transaksi
+      </a>
+      <a href="#users" class="block px-4 py-2 rounded-lg hover:bg-gray-100">
+        User
+      </a>
+      <a href="#reports" class="block px-4 py-2 rounded-lg hover:bg-gray-100">
+        Laporan
+      </a>
+      <a href="login.html" class="block px-4 py-2 rounded-lg text-red-500 hover:bg-red-50">
+        Logout
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="ml-64 flex-1 p-8 space-y-16">
+
+    <!-- DASHBOARD -->
+    <section id="dashboard">
+      <h2 class="text-3xl font-bold text-[#8c52ff] mb-6">Dashboard</h2>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-xl shadow p-6">
+          <p class="text-sm text-gray-500">Total Event</p>
+          <h3 class="text-3xl font-bold text-[#ff5757]">5</h3>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <p class="text-sm text-gray-500">Total Transaksi</p>
+          <h3 class="text-3xl font-bold text-[#ff5757]">128</h3>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <p class="text-sm text-gray-500">Total User</p>
+          <h3 class="text-3xl font-bold text-[#ff5757]">92</h3>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <p class="text-sm text-gray-500">Pendapatan</p>
+          <h3 class="text-3xl font-bold text-[#ff5757]">Rp 78 jt</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events">
+      <h2 class="text-2xl font-bold text-[#8c52ff] mb-4">Data Event</h2>
+
+      <div class="bg-white rounded-xl shadow p-6">
+        <table class="w-full text-sm">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 text-left">Nama Event</th>
+              <th class="px-4 py-2 text-left">Tanggal</th>
+              <th class="px-4 py-2 text-left">Lokasi</th>
+              <th class="px-4 py-2 text-left">Tiket Terjual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="px-4 py-2">Indie Fest 2025</td>
+              <td class="px-4 py-2">12 Juli 2025</td>
+              <td class="px-4 py-2">Bandung</td>
+              <td class="px-4 py-2">320</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TRANSACTIONS -->
+    <section id="transactions">
+      <h2 class="text-2xl font-bold text-[#8c52ff] mb-4">Transaksi</h2>
+
+      <div class="bg-white rounded-xl shadow p-6">
+        <table class="w-full text-sm">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 text-left">Nama</th>
+              <th class="px-4 py-2 text-left">Event</th>
+              <th class="px-4 py-2 text-left">Total</th>
+              <th class="px-4 py-2 text-left">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="px-4 py-2">May Nazhifa</td>
+              <td class="px-4 py-2">Indie Fest 2025</td>
+              <td class="px-4 py-2">Rp 615.000</td>
+              <td class="px-4 py-2">
+                <span class="px-2 py-1 text-xs rounded-full bg-green-100 text-green-700">
+                  Berhasil
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- USERS -->
+    <section id="users">
+      <h2 class="text-2xl font-bold text-[#8c52ff] mb-4">Data User</h2>
+
+      <div class="bg-white rounded-xl shadow p-6">
+        <table class="w-full text-sm">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 text-left">Nama</th>
+              <th class="px-4 py-2 text-left">Email</th>
+              <th class="px-4 py-2 text-left">Total Pembelian</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="px-4 py-2">May Nazhifa</td>
+              <td class="px-4 py-2">may@email.com</td>
+              <td class="px-4 py-2">2 Tiket</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- REPORTS -->
+    <section id="reports">
+      <h2 class="text-2xl font-bold text-[#8c52ff] mb-4">Laporan</h2>
+
+      <div class="bg-white rounded-xl shadow p-6 space-y-2 text-sm text-gray-600">
+        <p>• Laporan penjualan per event</p>
+        <p>• Laporan pendapatan bulanan</p>
+        <p>• Laporan aktivitas user</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
